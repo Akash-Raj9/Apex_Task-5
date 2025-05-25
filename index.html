@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AkashMart - Smart E-Commerce</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>AkashMart 🛍️</h1>
+    <input type="text" id="searchInput" placeholder="Search products..." />
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Clothing">Clothing</option>
+      <option value="Footwear">Footwear</option>
+      <option value="Books">Books</option>
+      <option value="Home">Home</option>
+      <option value="Beauty">Beauty</option>
+      <option value="Sports">Sports</option>
+      <option value="Toys">Toys</option>
+      <option value="Kitchen">Kitchen</option>
+      <option value="Garden">Garden</option>
+    </select>
+    <div class="cart-icon">🛒 <span id="cart-count">0</span></div>
+  </header>
+
+  <main>
+    <section id="products" class="grid"></section>
+    <aside class="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="cart-total">0.00</span></p>
+      <button onclick="checkout()">Checkout</button>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AkashMart. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
